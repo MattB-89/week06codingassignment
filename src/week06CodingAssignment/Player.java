@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Player {
 	
-	private int score;
+	int score;
 	
 	List<Card> hand = new ArrayList<Card>();
 	String name = "";
@@ -15,7 +15,6 @@ public class Player {
 	public Player(String name) {
 		this.name = name;
 		this.score = 0;
-		//this.value = value;
 	}
 	
 	public void describe() {
@@ -26,22 +25,19 @@ public class Player {
 	
 	public Card flip(List<Card> myCard) {
 		// removes and returns the top card of the Hand
-		Card card = myCard.remove(0);	// removes a card from the list
-		return card;
+		return myCard.remove(0);
 		
 	}
 	
 	public Card draw(Deck deck) {
 		// takes a Deck as argument and calls the draw method on the deck,
 		// adding the returned Card to the hand field
-		Card myCard = deck.draw();
-		//deck.draw();		
-		return myCard;
-				
+		Card myCard = deck.draw();		
+		return myCard;				
 	}
 	
 	public void incrementScore() {
 		// adds 1 to the Players score field
-	}
-	
+		this.score += 1;
+	}	
 }

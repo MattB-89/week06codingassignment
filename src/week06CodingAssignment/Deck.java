@@ -51,13 +51,13 @@ public class Deck {
 		}
 	}
 			
-	// 3. Deck shuffle() Method:
+	// Deck shuffle() Method:
 	//		Add a shuffle method within the Deck Class
 	public void shuffle() {
 		Collections.shuffle(this.cards);	// Built-in Collections method to randomize elements within a list
 	}
 			
-	// 4. Deck draw() Method:
+	// Deck draw() Method:
 	//		Add a draw method within the Deck Class	
 	public Card draw() {
 		Card card = this.cards.remove(0);	// removes a card from the list

@@ -24,6 +24,7 @@ public class Card {
 		this.value = value;
 	}
 
+	// getters and setters created
 	public String getName() {
 		return name;
 	}
